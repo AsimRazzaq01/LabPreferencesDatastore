@@ -14,11 +14,11 @@ import kotlinx.coroutines.launch
 /**
  * View Model Class -> for Main Screen
  */
-class MainScreenViewModel(application: Application) : AndroidViewModel(Application()){
+class MainScreenViewModel(application: Application) : AndroidViewModel(application){
 
     private val myPreferences: MyPreferences
 
-    var backColorStateFlow : StateFlow<Long> = MutableStateFlow(0xFFFFFF00)
+    var backColorStateFlow : StateFlow<Long> = MutableStateFlow<Long>(0xFFFFFF00)
         private set
 
 

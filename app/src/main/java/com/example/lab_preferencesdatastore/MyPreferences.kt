@@ -15,7 +15,6 @@ import kotlinx.coroutines.flow.map
 
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
-
 class MyPreferences (val context: Context) {
     private object PreferenceKeys {
         val backColor: Preferences.Key<Long> = longPreferencesKey("backColor")
